@@ -11,6 +11,12 @@ body {
     min-height: 100vh;
 
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
 
 header {
     background-color: #333;
@@ -27,20 +33,24 @@ nav{
     padding: 8px 16px;
 }
 
-.container{
-    display: flex;
-    flex: 1;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
     padding: 20px;
 }
 
 .main-content {
-    flex: 3;
     padding: 20px;
     background-color: aliceblue;
 }
 
 .aside-content {
-    flex: 1;
     padding: 20px;
     background-color: rgb(20, 131, 227);
 }
