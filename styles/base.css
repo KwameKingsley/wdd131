@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+
+header {
+    background-color: #047eae;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header h1 span {
+    color: #ffcc00; 
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+
+}
+
+header nav a:hover {
+    background-color: #005f8b;
+    border-radius: 5px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #0a6f97;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+.card img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(13, 13, 13);  
+}
+
+#aboutMe img {
+    width: 200px;
+    max-height: 250px;
+}
+
+.card ul {
+    padding: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+    text-decoration-color: #333;
+}
+
+.card ul li a {
+    color: #0074a2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #0074a2;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #lastModified {
+    font-size: 0.8rem;
+    padding: 10px;
+}
+

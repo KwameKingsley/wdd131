@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kingsley Kwarteng</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kingsley Kwarteng - Home Page">
+    <meta name="author" content="Kingsley's Project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="getdates.js" defer></script>
 </head>
 <body>
-    <H1>WDD 131 - Kingsley</H1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Kingsley Kwarteng</h1>
+        <nav class="Social Links">
+            <a href="https://www.linkedin.com/in/kwartkingsley/">LinkedIn</a>
+            <a href="https://byui.instructure.com/.">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/17?lang=eng">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Basic HTML Tutorials</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS Tutorials</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">JavaScript Tutorial</a></li>
+            </ul>
+        </section>
+
+        <section class="card" id="aboutMe">
+            <h2>About Me</h2>
+            <div style="display: flex; gap: 20px;">
+                <img src="images/image1.jpg" alt="ProfilePicture">
+                <div>
+                    <p>My name is Kingsley Kwarteng and I'm from Ghana, West Africa. I am the last born in my family of nine.
+                        I love taking long walks and hiking in the wild where nature surrounds me, and it's always a wonderful
+                         opportunity to see the marvelous work of God. I also enjoy soccer and basketball a lot.
+                         Reading is essential to human growth, and I especially enjoy the scriptures and novels with interesting stories.</p>
+                    <h2>Ghana</h2>
+                    <img src="images/image2.jpg" alt="GhanaFlag">
+                    <p>Ghana is a West African country located along the Gulf of Guinea. It neighbors Côte d'Ivoire to the west, Burkina Faso to the north, and Togo to the east. 
+                        Its population is about 32 million, with the capital city in Accra.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kingsley Kwarteng, Accra, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
