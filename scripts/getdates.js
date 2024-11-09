@@ -1,5 +1,8 @@
-const currentYear = new Date().getFullYear();
-document.querySelector("footer p").textContent = `©️ ${currentYear} Kingsley Kwarteng, Ghana`;
 
-const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;
+window.onload = function() {
+    const currentYearElement = document.getElementById('currentYear');
+    currentYearElement.textContent = new Date().getFullYear();
+
+    const lastModifiedElement = document.getElementById('lastModified');
+    lastModifiedElement.textContent = 'Last modified: ' + document.lastModified;
+};
