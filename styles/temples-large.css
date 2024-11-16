@@ -1,0 +1,53 @@
+
+@media (min-width: 640px) {
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+  
+    .temples-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 1rem; 
+    }
+  
+    figure {
+      margin: 0; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #f4f4f4; 
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    figure img {
+      width: 100%;
+      max-width: 32rem;
+      height: auto; 
+      border-radius: 5px; 
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: brown;
+      align-items: baseline;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+  }
+
