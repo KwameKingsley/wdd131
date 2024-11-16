@@ -27,6 +27,12 @@ nav ul li a {
     color: white;
     font-weight: bold;
   }
+nav a:hover {
+    color: #333;
+    background-color: rgb(53, 53, 137);
+    padding: 5px;
+    border-radius: 5px;
+}
 .hamburger {
     cursor: pointer;
     display: flex;
