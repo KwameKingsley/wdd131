@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghana - WDD 131 Dynamic Web Fundamentals</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kingsley Kwarteng">
+  <meta name="author" content="Kingsley Kwarteng">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="styles/place.css">
+
+
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Ghana</h1>
+  </header>
+
+  <main class="main-content">
+    <section class="info">
+  
+      <div class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 239,567 sq km</li>
+          <li><strong>Population:</strong> 33,346,450</li>
+          <li><strong>Capital:</strong> Accra</li>
+          <li><strong>Languages:</strong> English</li>
+          <li><strong>Currency:</strong> Ghana Cedis</li>
+          <li><strong>Time Zone:</strong> GMT</li>
+          <li><strong>Calling Code:</strong> +233</li>
+        </ul>
+      </div>
+
+ 
+      <div class="weather">
+        <h2>Weather</h2>
+        <ul>
+          <li><strong>Temperature:</strong> 10°C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> 5 km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+        </ul>
+      </div>
+
+ 
+      <div class="hero">
+        <picture>
+          <source srcset="images/image2large.webp" media="(min-width: 1000px)">
+          <source srcset="images/image2medium.webp" media="(min-width: 500px)">
+          <img src="images/image2small.webp" alt="Ghana Flag" width="1500" height="750">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="currentYear"></span> Kingsley Kwarteng, Accra, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
