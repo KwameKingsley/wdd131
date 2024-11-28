@@ -45,3 +45,36 @@ window.onload = function() {
     const lastModifiedElement = document.getElementById('lastModified');
     lastModifiedElement.textContent = 'Last modified: ' + document.lastModified;
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const heroLarge = document.getElementById("hero-source-large");
+  const heroMedium = document.getElementById("hero-source-medium");
+  const heroImg =document.getElementById("hero-img");
+
+  const heroSources = [
+    {
+      large: "images/image2large.webp",
+      medium: "images/image2medium.webp",
+      small: "images/image2small.webp",
+    },
+    {
+      large: "images/image2large.webp",
+      medium: "images/image2medium.webp",
+      small: "images/image2small.webp",
+    },
+  ];
+
+  let currentIndex = 0;
+
+  function swapHeroImage() {
+    currentIndex = (currentIndex + 1) % heroSources.length;
+
+    const newSource = heroSources[currentIndex];
+    heroLarge.srcset = newSource.large;
+    heroMedium.srcset = newSource.medium;
+    heroImg.srcset = newSource.small;
+  }
+
+  setInterval(swapHeroImage, 5000);
+  
+});

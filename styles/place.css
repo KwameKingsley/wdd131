@@ -123,6 +123,16 @@
   
   /* Responsive Design */
   @media (min-width: 768px) {
+    .weather-icon {
+      display: none;
+    }
+
+    .weather h2::after {
+      Content: "🌥️";
+      font-size: 1.2rem;
+      margin-left: 8px;
+    }
+
     .info {
       flex-direction: row;
       gap: 2rem;

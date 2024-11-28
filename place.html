@@ -7,6 +7,8 @@
   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kingsley Kwarteng">
   <meta name="author" content="Kingsley Kwarteng">
 
+  <link rel="preload" href="images/image2i.webp" as="image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
@@ -48,10 +50,10 @@
       </div>
 
       <div class="hero">
-        <picture>
-          <source srcset="images/image2large.webp" media="(min-width: 1000px)">
-          <source srcset="images/image2medium.webp" media="(min-width: 500px)">
-          <img src="images/image2small.webp" alt="Ghana Flag" width="1500" height="750">
+        <picture id="hero-picture">
+          <source id="hero-source-large" srcset="images/image2large.webp" media="(min-width: 1000px)">
+          <source id="hero-source-medium" srcset="images/image2medium.webp" media="(min-width: 500px)">
+          <img id="hero-img" src="images/image2small.webp" alt="Ghana Flag" width="1500" height="750">
         </picture>
       </div>
     </section>
