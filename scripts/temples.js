@@ -1,4 +1,4 @@
-// Display current year and last modified date
+
 window.onload = function () {
     const currentYearElement = document.getElementById('currentYear');
     currentYearElement.textContent = new Date().getFullYear();
@@ -7,7 +7,7 @@ window.onload = function () {
     lastModifiedElement.textContent = 'Last modified: ' + document.lastModified;
 };
 
-// Temple data
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -81,10 +81,10 @@ const temples = [
     }
 ];
 
-// Function to render temples
+
 function renderTemples(templesToDisplay) {
     const mainElement = document.querySelector("main");
-    mainElement.innerHTML = ""; // Clear previous content
+    mainElement.innerHTML = ""; 
 
     templesToDisplay.forEach(temple => {
         const card = document.createElement("div");
@@ -109,22 +109,18 @@ function renderTemples(templesToDisplay) {
         const area = document.createElement("p");
         area.innerHTML = `<strong>Area:</strong> ${temple.area} sq ft`;
 
-        // Append all elements to the card
         card.appendChild(img);
         card.appendChild(title);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
 
-        // Append the card to the main container
         mainElement.appendChild(card);
     });
 }
 
-// Initial render
 renderTemples(temples);
 
-// Event listener for navigation menu
 document.querySelector("nav").addEventListener("click", (event) => {
     const filter = event.target.textContent.trim();
 
