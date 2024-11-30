@@ -73,7 +73,46 @@ figcaption {
     font-weight: bold;
     font-size: 0.9rem;
   }
-  
+
+  .temples-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.temple-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width */
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.temple-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.temple-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure image fits within the card */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    display: block;
+}
 
 footer {
     background: rgb(70, 70, 189);
