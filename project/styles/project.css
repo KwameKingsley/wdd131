@@ -1,0 +1,20 @@
+/* Base Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #6E2C00;
+    margin: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #6E2C00;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #F5B041;
+    padding: 10px;
+    text-align: center;
+}
