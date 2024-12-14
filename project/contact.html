@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Poultry Farmer for inquiries, support, or partnership opportunities.">
+    <meta name="author" content="Kingsley Kwarteng">
+    <title>Contact Us | The Poultry Farmer</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <header>
+            <h1>The Poultry Farmer</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="siteplan.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Contact Us</h2>
+                <p>
+                    We’d love to hear from you! Whether you have questions about our products, need support, or want to learn more about our farming practices, 
+                    don’t hesitate to reach out.
+                </p>
+                <h3>Get in Touch</h3>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <p>
+                    Alternatively, you can email us at <a href="mailto:info@thepoultryfarmer.com">info@thepoultryfarmer.com</a> or call us at +233 246981675.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Kingsley Kwarteng, Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>

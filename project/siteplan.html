@@ -3,58 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kingsley Kwarteng">
+    <meta name="description" content="The Poultry Farmer - Fresh poultry products, recipes, and more.">
     <meta name="author" content="Kingsley Kwarteng">
+    <title>The Poultry Farmer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/project.css">
+
+    <script src="script/project.js" defer></script>
 </head>
 <body>
     <div class="grid-container">
+
         <header>
-            <h1>Header Content</h1>
-            <nav>
-                <a href="#Home">Home</a>
-                <a href="#AboutUs">About Us</a>
-                <a href="#Services">Services</a>
-                <a href="#ContactUs">Contact Us</a>
+            <h1>The Poultry Farmer</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="siteplan.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </header>
+
         <main>
-            <div class="main-content">
-                <h2>Main Content</h2>
-                <p>Site Name <br>
+            <section class="main-content">
+                <h2>Welcome to The Poultry Farmer</h2>
+                <img src="images/chickegg.jpg" alt="Eggs in a basket with chicken behind">
 
-                    The Poultry Farmer <br>
-                        •	Reason for Selection: The name highlights freshness and quality, aligning with the business’s commitment to providing premium chicken products. It is memorable, simple, and conveys trust. <br>
-                        •	Optional Domain Availability: thepoultryfarmer.com
-                    </p> <br>
-                <p>Site Purpose <br>
-
-                    The purpose of the The Poultry Farmer website is to serve as a central hub for customers seeking high-quality poultry products and recipes. <br>The site will: <br>
-                        •	Provide information about the company, including its values and farming practices. <br>
-                        •	Offer an online store for convenient product purchases. <br>
-                        •	Share chicken recipes, cooking tips, and product preparation guides. <br>
-                        •	Facilitate customer inquiries and engagement via a contact form. <br>
-                    <a href="https://wireframe.cc/pro/pp/4f95b86f5850370">wireframe mobile</a> <br>
-                    <a href="https://wireframe.cc/pro/pp/c333d6ae9850372">Wireframe Large Screen</a>
-                    </p>
-            </div>
-            <div class="aside-content">
-                <h2>Aside Content</h2>
-                <p>Scenarios
-                    1.	What is the price and availability of fresh chicken products? <br>
-                    2.	Can I find cooking tips and recipes for chicken dishes? <br>
-                    3.	Where can I locate the nearest outlet or farm location?
+                <h2>Our Purpose</h2>
+                <p>
+                    Our website serves as a hub for customers seeking high-quality poultry products and recipes. It includes:
                 </p>
-            </div>
+                <ul>
+                    <li>Information about our values and farming practices.</li>
+                    <li>An online store for convenient product purchases.</li>
+                    <li>Chicken recipes, cooking tips, and preparation guides.</li>
+                    <li>Customer engagement through a contact form.</li>
+                </ul>
+
+            </section>
+            <section class="image-section">
+                <h2>Discover Farm Eggs And Quality Chicken Carefully Sourced And Sustainably Reared</h2>
+                <img 
+                src="placeholder.jpg"
+                data-src="https://media.istockphoto.com/id/541979230/photo/chicken-and-eggs-in-the-basket-on-the-lawn.jpg?s=2048x2048&w=is&k=20&c=Sth0fsrahWoh95SKnrgPNoboy50lLNuOxyjuvCSPo2I="
+                alt="Chicken and eggs in a basket on the lawn"
+                class="lazy-load">
+                <img src="images/eggs.jpg" alt="Eggs in a basket">
+            </section>
+
+            <aside class="aside-content">
+                <h3>Common Questions</h3>
+                <ul>
+                    <li>What is the price and availability of fresh chicken products?</li>
+                    <li>Can I find cooking tips and recipes for chicken dishes?</li>
+                    <li>Where can I locate the nearest outlet or farm?</li>
+                </ul>
+                <a href="contact.html" class="button">Reach Us Here</a>
+            </aside>
         </main>
+
         <footer>
-            <p>Footer Content</p>
+            <p>&copy; <span id="currentYear"></span> Kingsley Kwarteng, Accra, Ghana</p>
+            <p id="lastModified"></p>
         </footer>
     </div>
 </body>
